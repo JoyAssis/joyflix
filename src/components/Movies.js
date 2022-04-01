@@ -33,11 +33,12 @@ export default class App extends React.Component{
     return(
       <div>
       {this.state.listFilmes.map((item) => (
-        <ul>
+        <ul key={item.id}>
           <li>{item.title}</li>
           <li>
             <img src={item.poster_path} alt={`banner do filme: ${item.title}`} />
           </li>
+          <li>{item.overview}</li>
         </ul>
       ))}
       </div>
