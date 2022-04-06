@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-//import img from "./src/img/claquete.png"
+//import img from "./src/components/img/claquete.png"
 
 
 const Container = styled.div`
@@ -20,7 +20,7 @@ border-radius: 170px;
 function Home() {
     return (
         <Container>
-            
+            <img src="claquete.png"/>
             <Box>
             <h2>imagem aqui</h2>
             </Box> 
