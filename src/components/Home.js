@@ -4,25 +4,28 @@ import styled from "styled-components";
 
 
 const Container = styled.div`
-background-color: #f7ede2;
+background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
 height: 76vh;
 display: flex;
 justify-content: flex-start;
 `
 const Box = styled.section`
-height: 55vh;
-width: 50vw;
 margin: 5vw;
-border: 2px solid black;
-border-radius: 170px;
+ img{
+    height: 55vh;
+    width: 20vw;
+    border: 2px solid pink;
+    border-radius: 170px;
+ }
 `
 
 function Home() {
     return (
         <Container>
-            <img src="claquete.png"/>
+            
             <Box>
-            <h2>imagem aqui</h2>
+            <img src="https://i.pinimg.com/564x/58/51/bd/5851bde1fc3616783c34efb4cf394127.jpg"/>
             </Box> 
         </Container>
     );
