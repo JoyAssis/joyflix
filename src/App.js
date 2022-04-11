@@ -44,6 +44,9 @@ const GlobalStyle = createGlobalStyle`
   width: 100%;
   font-size: 2vw;
   `
+  const Content = styled.div`
+  margin-top: 40px;
+  `
 
 class App extends Component {
   render () {
@@ -65,12 +68,14 @@ class App extends Component {
             </Item>
           </List>
         </Menu>
-
+        
+        <Content>
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="Movies" element={<Movies/>}/>
           <Route path="Series" element={<Series/>}/>          
         </Routes>
+        </Content>
       
       </Router>    
     
